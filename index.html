@@ -702,21 +702,24 @@ navbar-default {
                       <span class="fa-stack fa-4x img-circle bgLazyload" role="img" aria-label="Customer Relation Management" data-bg="https://www.responsiveclassroom.org/wp-content/uploads/2016/04/DSC_2388.jpg">
                       </span>
                       <h3>
-                        <script>
-                          (async function() {
-                              const { text } = await( await fetch(`/api/httpTrigger1`)).json();
-                              document.querySelector('#name').textContent = text;
-                          }());
-                          </script>
                         <strong>
                      Succinctly strategic
                         </strong>
                       </h3>
                       <ul><li>
+                        <script>
+                          (async function() {
+                              const { text } = await( await fetch(`/api/httpTrigger1`)).json();
+                              document.querySelector('#apiText').textContent = text;
+                          }());
+                          </script>
                           <a href="https://www.devere-group.com/why-is-google-cracking-down-on-forbes/">Aggressive SEO Tactics</a>
 <a href="https://www.adweek.com/media/cnn-forbes-lose-millions-google-seo-policy/">cost publishers millions</a>
                           </li>
-                        <li><a href="https://www.smartsites.com/organic-seo/">Smart Sites SEO Firm</a></li></li>
+                          <!--                        <li><a href="https://www.smartsites.com/organic-seo/">Smart Sites SEO Firm</a></li></li> -->
+                          <li> <span id="apiText"></span> 
+                          <a href="#section-services">What we do here at OBIseo</a>
+                          </li>
                           </ul>
                     </div>
                   </div>
