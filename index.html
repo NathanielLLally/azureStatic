@@ -107,7 +107,47 @@
                               unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
                             }
 
-    </style>
+.logo_text {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size:12vw;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 220px;
+  color: #000000;
+  text-shadow: 0 10px 7px rgba(0,0,0,0.4),0 -10px 1px #fff;
+  letter-spacing: -3px;
+  b { color: #00FFFF; }
+}
+
+
+.logo_text_tag {
+  text-transform: lowercase;
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: calc(1rem + min(20px, 150vw));
+  font-weight: 800;
+  letter-spacing: -.045ch;
+  line-height: 0.9;
+
+  #place-content: center;
+  #align-items: center;
+ 
+  b {
+    letter-spacing: .035ch;
+
+    min-block-size: 100%;
+ 
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 4px 4px black;
+  }
+ }
+
+ </style>
 
     <!-- Facebook Meta Info --> 
     <!-- Google+ Meta Info --> 
@@ -153,9 +193,10 @@
           <div class="site_container"> 
             <div class="navbar-header"> 
               <a href="#page-top" class="logo_name navbar-brand s123-w-l-s page-scroll">
-                <span class="website-name"><font color="white">OBI</font><font color="#00FFFF">seo</font>: <font color="white">O</font>nline <font color="white">B</font>usiness <font color="white">I</font>ntelligence
-                </span>
+                <span class="logo_text"><h3>OBI<b>seo</b></h3></span>
+                <span class="logo_text_tag">: <b>O</b>nline<b>B</b>usiness<b>I</b>ntelligence</span>
               </a> 
+                <!-- </span>
             </div> 
             <div id="top-menu"> 
               <ul class="navPages nav navbar-nav"> 
@@ -171,8 +212,8 @@
                     </span>
                   </a>
                 </li>
-                <li class="moduleMenu" data-menu-module-id="674540d9e61c8">
-                  <a class="page-scroll" href="#section-674540d9e61c8">
+                <li class="moduleMenu" data-menu-module-id="services">
+                  <a class="page-scroll" href="#section-services">
                     <span class="txt-container">Services
                     </span>
                   </a>
@@ -239,8 +280,8 @@
               </span>
             </a>
           </li>
-          <li class="moduleMenu" data-menu-module-id="674540d9e61c8">
-            <a class="page-scroll" href="#section-674540d9e61c8">
+          <li class="moduleMenu" data-menu-module-id="services">
+            <a class="page-scroll" href="#section-services">
               <span class="txt-container">Services
               </span>
             </a>
@@ -409,14 +450,14 @@
               <!-- Bottom Adds -->
             </div>
           </section>
-          <section id="section-674540d9e61c8" class="s123-module s123-module-services layout-1 bg-primary  " data-module-id="674540d9e61c8" data-module-type-num="3"  > 
+          <section id="section-services" class="s123-module s123-module-services layout-1 bg-primary  " data-module-id="services" data-module-type-num="3"  > 
             <div data-aos="fade-up" class="container-fluid page_header_style noBackground">
               <div class="row">
                 <div class="container moduleTitleContainer">
                   <div class="row modulesTitle text-center">
                     <div class="col-xs-12">
                       <div class="page-header-wrap">
-                        <H2 id="section-674540d9e61c8-title"  class="s123-page-header  ">Services
+                        <H2 id="section-services-title"  class="s123-page-header  ">Services
                         </H2>
             <hr class="small">
                       </div>
@@ -483,14 +524,14 @@
             </div>
           </section>
 
-          <section id="section-reference" class="s123-module s123-module-services layout-1 bg-primary  " data-module-id="674540d9e61c8" data-module-type-num="3"  > 
+          <section id="section-reference" class="s123-module s123-module-services layout-1 bg-primary  " data-module-id="services" data-module-type-num="3"  > 
             <div data-aos="fade-up" class="container-fluid page_header_style noBackground">
               <div class="row">
                 <div class="container moduleTitleContainer">
                   <div class="row modulesTitle text-center">
                     <div class="col-xs-12">
                       <div class="page-header-wrap">
-                        <H2 id="section-674540d9e61c8-title"  class="s123-page-header  ">SEO References
+                        <H2 id="section-reference-title"  class="s123-page-header  ">SEO References
                         </H2>
             <hr class="small">
                       </div>
@@ -544,10 +585,12 @@
                         </strong>
                       </h4>
                       <ul><li>
+                          <a href="https://www.obiseo.net/#section-services/">What we do here at OBIseo</a>
+                        </li><li>
                           <a href="https://www.devere-group.com/why-is-google-cracking-down-on-forbes/">Aggressive SEO Tactics</a>
 <a href="https://www.adweek.com/media/cnn-forbes-lose-millions-google-seo-policy/">cost publishers millions</a>
                           </li>
-                        <li><a href="https://www.smartsites.com/organic-seo/">Smart Sites SEO Firm</a></li></li>
+                          <!-- <li><a href="https://www.smartsites.com/organic-seo/">Smart Sites SEO Firm</a></li></li> -->
                           </ul>
                     </div>
                   </div>
@@ -741,7 +784,7 @@
                       </div>
                     </div>
                     <div class="col-md-12 col-xs-12 col-sm-12" id="thankYou">
-                      <form data-date-format="m/d/Y" data-click-action="thankYouMessage" action="https://www.obiseo.net/#section-674540d9e61c8" method="GET">
+                      <form data-date-format="m/d/Y" data-click-action="thankYouMessage" action="https://www.obiseo.net/#section-reference" method="GET">
                         <div class="row">
                           <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="form-group">
@@ -806,9 +849,15 @@
                           </span>
                         </a>
                       </li>
-                      <li class="moduleMenu" data-menu-module-id="674540d9e61c8">
-                        <a class="page-scroll" href="#section-674540d9e61c8">
+                      <li class="moduleMenu" data-menu-module-id="services">
+                        <a class="page-scroll" href="#section-services">
                           <span class="txt-container">Services
+                          </span>
+                        </a>
+                      </li>
+                      <li class="moduleMenu" data-menu-module-id="reference">
+                        <a class="page-scroll" href="#section-reference">
+                          <span class="txt-container">SEO References
                           </span>
                         </a>
                       </li>
