@@ -1,0 +1,1 @@
+az staticwebapp functions link -n 2 -g MyFirstGroup --function-resource-id /subscriptions/a2bffded-41d0-4166-b27b-868c9a8b1b29/resourceGroups/MyFirstGroup/providers/Microsoft.Web/sites/storeFields

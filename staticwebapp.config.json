@@ -3,7 +3,7 @@
     {
       "route": "/",
       "methods": [
-        "get"
+        "GET", "POST"
       ]
     }
   ]
